@@ -21,10 +21,13 @@ export default function Profile() {
   return (
     <div
       style={{
-        marginTop: "120px",
+        minHeight: "100vh",         // يخليها ماليه الشاشة طول
+        width: "100%",              // ماليه الشاشة عرض
+        background: "#111",         // خلفية غامقة زي auth
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        padding: "20px",
       }}
     >
       <div

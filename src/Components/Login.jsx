@@ -14,7 +14,8 @@ const Login = () => {
 
     if (storedUser && storedUser.email === email && storedUser.password === password) {
       alert("✅ Login successful!");
-      navigate("/"); // الصفحة الرئيسية أو أي صفحة تانية
+      localStorage.setItem("isLoggedIn", "true"); // نحفظ إن اليوزر عامل لوج إن
+      navigate("/"); // الصفحة الرئيسية
     } else {
       alert("❌ Wrong email or password!");
     }

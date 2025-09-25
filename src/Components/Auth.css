@@ -12,7 +12,7 @@
   border-radius: 10px;
   color: #fff;
   width: 350px;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.5);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
   text-align: center;
 }
 
@@ -58,4 +58,9 @@
   color: crimson;
   cursor: pointer;
   font-weight: bold;
+}
+.auth-card p {
+  margin: 0.5rem 0;
+  font-size: 15px;
+  color: #ddd;
 }
