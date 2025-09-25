@@ -9,6 +9,10 @@ import MoviesList from './Components/MoviesList'
 import MovieDetails from './Components/MovieDetails'
 import BookingPage from './Components/BookingPage'
 import Nav from './Components/Nav'
+import Login from './Components/Login';
+import Signup from './Components/Signup';
+import Profile from './Components/Profile';
+
 
 
 
@@ -17,6 +21,11 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/profile" element={<Profile />} />
+        
+
         <Route
           path="/"
           element={
@@ -38,6 +47,7 @@ function App() {
         <Route path="/movie/:id" element={<MovieDetails />} />
 
         <Route path="/booking/:id" element={<BookingPage />} />
+
       </Routes>
     </Router>
   )
