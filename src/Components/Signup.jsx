@@ -45,7 +45,9 @@ const Signup = () => {
             required
           />
 
-          <button type="submit" className="btn-auth">Sign Up</button>
+          <button type="submit" className="btn-auth">
+            Sign Up
+          </button>
         </form>
 
         <p className="auth-switch">

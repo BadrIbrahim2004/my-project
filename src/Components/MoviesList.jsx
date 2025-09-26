@@ -1,29 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./MoviesList.css";
 
-const MoviesList = ({ searchTerm }) => {
-  const [movies, setMovies] = useState([]);
-
-  useEffect(() => {
-    fetch("https://api.themoviedb.org/3/movie/popular?api_key=12f95b4d46c36a2f74e0cd6ad0a44cc3&language=en-US&page=1")
-      .then((res) => res.json())
-      .then((data) => setMovies(data.results.slice(0, 16)))
-      .catch((err) => console.error(err));
-  }, []);
-
+const MoviesList = ({ searchTerm, movies }) => {
   const filteredMovies = movies.filter((movie) =>
     movie.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
-
-  useEffect(() => {
-    if (filteredMovies.length > 0) {
-      const firstMovie = document.getElementById(`movie-${filteredMovies[0].id}`);
-      if (firstMovie) {
-        firstMovie.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  }, [filteredMovies]);
 
   return (
     <>
@@ -52,4 +34,5 @@ const MoviesList = ({ searchTerm }) => {
     </>
   );
 };
+
 export default MoviesList;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Auth.css"; // نفس ملف CSS للاتنين
+import "./Auth.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -12,10 +12,13 @@ const Login = () => {
 
     const storedUser = JSON.parse(localStorage.getItem("user"));
 
-    if (storedUser && storedUser.email === email && storedUser.password === password) {
-      alert("✅ Login successful!");
-      localStorage.setItem("isLoggedIn", "true"); // نحفظ إن اليوزر عامل لوج إن
-      navigate("/"); // الصفحة الرئيسية
+    if (
+      storedUser &&
+      storedUser.email === email &&
+      storedUser.password === password
+    ) {
+      localStorage.setItem("isLoggedIn", "true");
+      navigate("/");
     } else {
       alert("❌ Wrong email or password!");
     }
@@ -42,7 +45,9 @@ const Login = () => {
             required
           />
 
-          <button type="submit" className="btn-auth">Login</button>
+          <button type="submit" className="btn-auth">
+            Login
+          </button>
         </form>
 
         <p className="auth-switch">

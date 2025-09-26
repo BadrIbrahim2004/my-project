@@ -11,9 +11,9 @@ h2::after {
   width: 3.2rem;
   height: 0.4rem;
   background: #04858e;
-  margin: 0.5rem auto 0 ;
+  margin: 0.5rem auto 0;
   border-radius: 2px;
-} 
+}
 .why-us {
   position: relative;
   min-height: 100vh;
@@ -22,7 +22,7 @@ h2::after {
   align-items: center;
   gap: 30px;
   padding-right: 60px;
-    padding-left: 60px;
+  padding-left: 60px;
 }
 
 .why-us p {
@@ -81,7 +81,7 @@ h2::after {
 
 .arrowRight {
   right: 15px;
-} 
+}
 
 .indicators {
   margin-top: 12px;
@@ -131,25 +131,25 @@ h2::after {
   }
 
   .arrowLeft {
-     left: 12px; 
-    }
-  .arrowRight { 
-    right: 12px; 
-}
+    left: 12px;
+  }
+  .arrowRight {
+    right: 12px;
+  }
 
   .dot {
     width: 12px;
     height: 8px;
   }
 }
-@media (max-width: 567px){
- .why-us {
+@media (max-width: 567px) {
+  .why-us {
     grid-template-columns: 1fr;
-padding: 0 16px;
+    padding: 0 16px;
     gap: 20px;
     min-height: auto;
   }
-    .why-us p {
+  .why-us p {
     font-size: 15px;
   }
 
@@ -165,10 +165,10 @@ padding: 0 16px;
   .arrowRight {
     padding: 6px;
   }
-.dot {
-  width: 10px;
-  height: 10px;
-}
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 @media (min-width: 568x) and (max-width: 767px) {
@@ -192,7 +192,6 @@ padding: 0 16px;
     object-fit: cover;
   }
 }
-
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .why-us {
@@ -232,7 +231,6 @@ padding: 0 16px;
     max-height: 420px;
   }
 }
-
 
 @media (min-width: 1200px) and (max-width: 1400px) {
   .why-us {
@@ -277,10 +275,10 @@ padding: 0 16px;
 
   .dot {
     width: 16px;
-    height:12px;
+    height: 12px;
+  }
 }
-}
-@media (max-width: 1023px){
+@media (max-width: 1023px) {
   .why-us {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -291,7 +289,6 @@ padding: 0 16px;
     grid-area: content;
   }
   .image-box {
-    grid-area:image;
+    grid-area: image;
+  }
 }
-}
-

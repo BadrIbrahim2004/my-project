@@ -21,15 +21,14 @@ export default function Profile() {
   return (
     <div
       style={{
-        minHeight: "100vh",         // يخليها ماليه الشاشة طول
-        width: "100%",              // ماليه الشاشة عرض
-        background: "#111",         // خلفية غامقة زي auth
+        minHeight: "100vh",
+        width: "100%",
+        background: "#111",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         padding: "20px",
-      }}
-    >
+      }}>
       <div
         style={{
           background: "#1e1e1e",
@@ -40,8 +39,7 @@ export default function Profile() {
           width: "100%",
           maxWidth: "400px",
           textAlign: "center",
-        }}
-      >
+        }}>
         {/* صورة بروفايل افتراضية */}
         <div
           style={{
@@ -56,8 +54,7 @@ export default function Profile() {
             fontSize: "40px",
             fontWeight: "bold",
             color: "#fff",
-          }}
-        >
+          }}>
           {user.name.charAt(0).toUpperCase()}
         </div>
 
@@ -79,8 +76,7 @@ export default function Profile() {
             cursor: "pointer",
             transition: "0.3s",
           }}
-          onClick={() => navigate("/")}
-        >
+          onClick={() => navigate("/")}>
           ⬅️ Back to Home
         </button>
       </div>
